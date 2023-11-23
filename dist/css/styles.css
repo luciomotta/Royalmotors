@@ -11160,3 +11160,10 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+.tabela-fipe {
+  padding-top: 0px; /* Adapte o valor conforme desejado para o topo */
+  padding-bottom: 0px; /* Adapte o valor conforme desejado para a parte inferior */
+  margin: 0;
+  /* Você também pode ajustar o preenchimento nos lados esquerdo e direito, se necessário */
+}
