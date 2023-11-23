@@ -1,9 +1,0 @@
-[build]
-  base = "dist"  # Diretório base onde as dependências são instaladas e o comando de construção é executado
-  publish = "dist"  # Diretório onde os arquivos do site são armazenados após a construção
-  command = "npm run build"  # Comando de construção para compilar o projeto
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
