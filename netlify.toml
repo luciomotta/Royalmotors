@@ -1,9 +1,9 @@
 [build]
-  base = "."  # Diretório base onde as dependências são instaladas e o comando de construção é executado
-  publish = "."  # Diretório onde os arquivos do site são armazenados após a construção
-  command = "npm run build"  # Comando de construção para compilar o projeto
+  # Configurações para o processo de build
+  command = "pip install -r requirements.txt && python app.py"  # Comando de build do seu projeto
+  publish = "public"  # Diretório de saída após o build
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[dev]
+  # Configurações para o ambiente de desenvolvimento
+  command = "python app.py"  # Comando para iniciar o servidor Flask localmente
+  port = 5000  # Porta onde o servidor local será executado
