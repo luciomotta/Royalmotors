@@ -1,9 +1,0 @@
-[build]
-  base = ""  # Deixe em branco ou remova se não houver um diretório base
-  publish = ""  # Deixe em branco ou remova se não houver um diretório de publicação
-  command = "npm run build"  # Comando de construção para compilar o projeto
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
