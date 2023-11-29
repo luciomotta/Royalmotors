@@ -1,13 +1,15 @@
-from flask import Flask, request
+from flask import Flask, render_template, request
 import requests
 from dotenv import load_dotenv
 import os
-#pip install Flask ---> Instalar
-#python app.py ----->Iniciar
-#Abra um navegador e vá para http://127.0.0.1:5000/ (ou o link fornecido pelo Flask)
 
 app = Flask(__name__)
 load_dotenv()  # Carrega as variáveis do arquivo .env
+
+# Definindo a rota para renderizar o HTML
+@app.route('/')
+def index():
+    return render_template('templates/index.html')
 
 # Endpoint para lidar com o formulário
 @app.route('/submit', methods=['POST'])
