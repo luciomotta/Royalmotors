@@ -1,39 +1,40 @@
+// Abrir o modal ao clicar no botão de cotação
 document.getElementById('quoteButton').addEventListener('click', function() {
     document.getElementById('quoteModal').style.display = 'block';
 });
 
+// Fechar o modal ao clicar no botão de fechar
 document.getElementsByClassName('close')[0].addEventListener('click', function() {
     document.getElementById('quoteModal').style.display = 'none';
 });
 
+// Fechar o modal ao clicar fora dele
 window.addEventListener('click', function(event) {
     if (event.target == document.getElementById('quoteModal')) {
         document.getElementById('quoteModal').style.display = 'none';
     }
 });
 
-
-
-//lOGICA DO FORMULARIO
+// Lógica de validação do formulário
 function validateForm() {
     const cpf = document.getElementById('cpf').value;
     const phone = document.getElementById('phone').value;
     const hasCar = document.querySelector('input[name="hasCar"]:checked');
   
-    // RegEx for CPF validation
+    // RegEx para validação de CPF
     const cpfRegex = /^[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}$/;
   
     if (!cpfRegex.test(cpf)) {
-      alert('Por favor, insira um CPF válido.');
-      return false;
+        alert('Por favor, insira um CPF válido.');
+        return false;
     }
   
-    // Additional validation for phone number and car selection if needed
+    // Validação adicional para número de telefone e seleção de carro, se necessário
   
-    return true; // Form submission allowed
-  }
-  
-  // Formatação do CPF
+    return true; // Envio do formulário permitido
+}
+
+// Formatação do CPF
 const cpfInput = document.getElementById('cpf');
 cpfInput.addEventListener('input', (e) => {
     let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é dígito
