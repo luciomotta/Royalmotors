@@ -26,6 +26,7 @@ Minhas Past é um site que oferece cotações de veículos usando a Tabela FIPE.
 ### Execução do Projeto
 1. Inicie o servidor: `python app.py`
 2. Acesse o site localmente através do navegador: `http://localhost:8000`
+![Loja](https://github.com/luciomotta/Royalmotors/assets/83682095/09de9ef4-62f0-492c-8068-1cb42f2b022b)
 
 ## Configuração do Ambiente
 - As variáveis de ambiente podem ser configuradas no arquivo `.env`. Certifique-se de preencher as chaves necessárias para a integração com a API do Trello.
