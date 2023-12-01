@@ -1,9 +1,0 @@
-[build]
-  # Configurações para o processo de build
-  command = "pip install -r requirements.txt && python app.py"  # Comando de build do seu projeto
-  publish = "public"  # Diretório de saída após o build
-
-[dev]
-  # Configurações para o ambiente de desenvolvimento
-  command = "python app.py"  # Comando para iniciar o servidor Flask localmente
-  port = 5000  # Porta onde o servidor local será executado
