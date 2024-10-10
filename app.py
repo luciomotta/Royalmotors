@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request
 import requests
 from dotenv import load_dotenv
 import os
 import logging
+from flask import Flask, render_template
 
 app = Flask(__name__, static_folder='static')
 load_dotenv()  # Carrega as variáveis do arquivo .env
